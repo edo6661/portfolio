@@ -23,11 +23,11 @@ const NavLink = ({
     }
     return pathname.includes(nameWithoutPrefix);
   }
-  const activePathStyle = isActivePath() ? 'text-secondary-white' : 'text-[#607b96]';
+  const activePathStyle = isActivePath() ? 'text-secondary-white' : 'text-secondary';
   const lastLink = nameWithoutPrefix === 'projects'
 
   return (
-    <li className="text-[#607b96] py-4 px-6 relative group">
+    <li className="text-secondary py-4 px-6 relative group">
       <Link className={`${activePathStyle}`} href={href()}>
         {name}
       </Link>

@@ -1,11 +1,12 @@
 import React from 'react'
 import NavLink from './NavLink'
+import ContactMeLink from './ContactMeLink'
 export const navLinks = ["_home", "_about-me", "_projects"]
 const Header = () => {
   return (
-    <header className="border-b border-line px-6 ">
+    <header className="border-b border-line pl-6 ">
       <nav className=" flex justify-between items-center">
-        <p className="text-[#607b96]">
+        <p className="text-secondary">
           Edawg
         </p>
         <ul className="flex items-center ">
@@ -13,9 +14,8 @@ const Header = () => {
             return <NavLink key={link} name={link} />
           })}
         </ul>
-        <p className="text-[#607b96]">
-          _contact-me
-        </p>
+        <ContactMeLink />
+
 
       </nav>
     </header>)
