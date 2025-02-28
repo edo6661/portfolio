@@ -1,24 +1,27 @@
 import React from 'react'
 import NavLink from './NavLink'
-import ContactMeLink from './ContactMeLink'
-export const navLinks = ["_home", "_about-me", "_projects"]
+import HeaderMobile from './HeaderMobile'
+import { navLinks } from '@/constants/headerFooter'
 const Header = () => {
   return (
-    <header className="border-b border-line pl-6 ">
-      <nav className=" flex justify-between items-center">
-        <p className="text-secondary">
+    <header className="border-b border-line pl-6 relative">
+      <nav className="hidden md:flex justify-between items-center ">
+        <span className="text-secondary">
           Edawg
-        </p>
-        <ul className="flex items-center ">
+        </span>
+        <div className="flex items-center ">
           {navLinks.map((link) => {
             return <NavLink key={link} name={link} />
           })}
-        </ul>
-        <ContactMeLink />
-
+        </div>
+        <NavLink
+          name="_contact-me"
+        />
 
       </nav>
-    </header>)
+      <HeaderMobile />
+    </header>
+  )
 }
 
 export default Header

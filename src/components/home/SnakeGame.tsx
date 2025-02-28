@@ -190,6 +190,7 @@ const SnakeGame = () => {
 
     window.addEventListener('keydown', handleKeydown);
     return () => window.removeEventListener('keydown', handleKeydown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gameStarted, gameOver]);
 
   useEffect(() => {

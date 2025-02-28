@@ -124,6 +124,18 @@ body {
   opacity: 0.5;
   z-index: 30;
 }
+@media (max-width: 640px) {
+  .css-blurry-gradient-blue {
+    left: 70%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .css-blurry-gradient-green {
+    left: 30%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+  }
+}
 #console {
   width: 530px;
   height: 475px;
@@ -172,7 +184,7 @@ body {
 }
 #console-button:hover {
   background-color: #010c15d8;
-  box-shadow: #43d9ad 0 0 10px;
+  box-shadow: var(--accent-green) 0 0 10px;
 }
 
 #console-menu {
