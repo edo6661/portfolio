@@ -225,7 +225,7 @@ const SnakeGame = () => {
         <button onClick={startAgain}>Play Again</button>
       </div>
       <div className=' md:flex flex-col gap-2 items-center justify-center hidden '>
-        <div className='bg-[#01142319] text-white py-1 px-2 rounded-md lg:text-sm text-xs'>
+        <div className='bg-[#01142319] text-white py-1 px-2 rounded-md  text-xs'>
           <p>Use keyboard</p>
           <p>Arrows to play</p>
         </div>
