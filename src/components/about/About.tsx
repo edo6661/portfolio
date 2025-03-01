@@ -78,18 +78,20 @@ export const ThirdSectionAbout = (
           </div>
         </motion.div>
       </AnimatePresence>
-      <div className='flex flex-col gap-2 pl-2 pr-8 py-2 relative flex-1 h-full'>
-        <ScrollBarCode />
-        <AnimatePresence mode="wait"
-          initial={false}
-        >
-          <motion.div
-            key={activeItemValue}
-            variants={yVariants}
-            initial='initial'
-            animate='animate'
-            exit='exit'
-            transition={yTransition}
+      <AnimatePresence mode="wait"
+        initial={false}
+      >
+        <motion.div
+          key={activeItemValue}
+          variants={yVariants}
+          initial='initial'
+          animate='animate'
+          exit='exit'
+          transition={yTransition}
+          className='flex flex-col gap-2 pl-2 pr-8 py-2 relative flex-1 h-full'>
+          <ScrollBarCode />
+          <div
+
           >
             {codeLines.map((item, index) => (
               <LineOfCode
@@ -99,11 +101,11 @@ export const ThirdSectionAbout = (
                 code={item.code}
               />
             ))}
-          </motion.div>
-        </AnimatePresence>
+          </div>
 
 
-      </div>
+        </motion.div>
+      </AnimatePresence>
 
     </div>
   )
