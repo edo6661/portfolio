@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable}  antialiased bg-[#010C15]`}
       >
-        <div className="min-h-screen flex justify-center items-center py-4 px-12">
+        <div className="min-h-screen flex justify-center items-center py-4 px-8">
           <div className="min-h-[94vh] container bg-primary-dark border border-line rounded-lg flex flex-col text-sm relative">
             <Header />
             {children}

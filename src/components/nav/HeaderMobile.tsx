@@ -2,15 +2,20 @@
 import { navLinks } from '@/constants/headerFooter'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu } from 'lucide-react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLinkFooter } from './NavLink'
+import { usePathname } from 'next/navigation'
 
 const HeaderMobile = () => {
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
+  useEffect(() => {
+    setIsOpen(false)
+  }, [pathname])
 
   return (
     <>
-      <div className='flex items-center justify-between md:hidden text-secondary py-4 pr-6 z-50 relative'>
+      <div className='flex items-center justify-between md:hidden text-secondary py-4 z-50 relative border-b border-line px-6'>
         <span>
           Edawg
         </span>
@@ -25,9 +30,12 @@ const HeaderMobile = () => {
       </div>
       <AnimatePresence>
         {isOpen && (
-          <motion.div className='md:hidden z-50 absolute text-secondary bg-primary-dark w-full -ml-6 h-[620px] border-t border-line'
+          <motion.div className='md:hidden bg-primary-dark text-secondary border-t border-line 
+            absolute inset-0 z-50 border-b
+          '
             style={{
-              bottom: -620,
+              top: "56px",
+              bottom: "56px"
             }}
             key="modal"
             initial={{ opacity: 0 }}
