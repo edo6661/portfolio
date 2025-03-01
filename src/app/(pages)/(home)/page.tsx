@@ -17,7 +17,7 @@ const HomePage = () => {
   )
 }
 
-export const MainSection = () => {
+const MainSection = () => {
   return (
     <div className="sm:col-span-1 col-span-2 justify-center flex flex-col text-white mx-auto gap-8 px-8">
       <div className="space-y-2">

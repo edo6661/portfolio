@@ -84,6 +84,24 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--line);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-default);
+    border-radius: 10px;
+    border: 2px solid var(--line);
+  }
+
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-default) var(--line);
+  }
 }
 
 /* ! HOMEPAGE */
