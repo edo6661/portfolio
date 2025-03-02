@@ -2,39 +2,45 @@
 import Image from 'next/image'
 import React, { useMemo, useState } from 'react'
 import GithubCorner from './GithubCorner'
-import { AnimatePresence, motion } from 'framer-motion'
 
 export type Tech = "React" | "Vue" | "Flutter" | "Kotlin" | "Typescript" | "NextJS"
 const techs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS"]
 export type ProjectTech = {
   image: string
   title: string
+  imageFilled: string
 }
 
 const projectTech: Record<Tech, ProjectTech> = {
   React: {
     image: "icons/techs/react.svg",
+    imageFilled: "icons/techs/filled/react.svg",
     title: "React"
   },
 
   Vue: {
     image: "icons/techs/vue.svg",
+    imageFilled: "icons/techs/filled/vue.svg",
     title: "Vue"
   },
   Flutter: {
     image: "icons/techs/flutter.svg",
+    imageFilled: "icons/techs/filled/flutter.svg",
     title: "Flutter"
   },
   Kotlin: {
-    image: "icons/techs/filled/kotlin.svg",
+    image: "icons/techs/kotlin.svg",
+    imageFilled: "icons/techs/filled/kotlin.svg",
     title: "Kotlin"
   },
   Typescript: {
-    image: "icons/techs/filled/typescript.svg",
+    image: "icons/techs/typescript.svg",
+    imageFilled: "icons/techs/filled/typescript.svg",
     title: "Typescript"
   },
   NextJS: {
-    image: "icons/techs/filled/nextjs.svg",
+    image: "icons/techs/nextjs.svg",
+    imageFilled: "icons/techs/filled/nextjs.svg",
     title: "NextJS"
   }
 }
@@ -242,6 +248,21 @@ const RightSection = (
               <GithubCorner
                 url={project.githubUrl}
               />
+              <div className='absolute top-0 left-0 text-secondary-white rounded-bl-md px-2 py-1 space-y-4 rounded-tl-md rounded-br-md '
+                style={{
+                  backgroundColor: "rgba(255, 255, 255, 0.1)"
+                }}
+              >
+                {project.tech.map((tech, i) => (
+                  <Image
+                    key={i}
+                    src={projectTech[tech].imageFilled}
+                    width={24}
+                    height={24}
+                    alt={projectTech[tech].title}
+                  />
+                ))}
+              </div>
               <Image
                 src={project.image}
                 width={200}
