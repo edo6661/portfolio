@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio AQ
 
-## Getting Started
+![Portfolio AQ](https://firebasestorage.googleapis.com/v0/b/accesstoken-ecommerce-01.appspot.com/o/revy-love.jpg?alt=media&token=6dd0bf6d-5eb2-4ad0-a5a2-98bbb8427c1c)
 
-First, run the development server:
+## 🚀 Project Overview
 
-```bash
-npm run dev
-# or
+Portfolio AQ is a personal portfolio website built with **Next.js**, designed to showcase projects and experiences professionally.
+
+## ✨ Features
+
+- ⚡ **Next.js 15** for optimal performance
+- 🎨 **Tailwind CSS** for flexible styling
+- 🎬 **Framer Motion** for interactive animations
+- ✉️ **Nodemailer** for email contact functionality
+- 🔗 **Lucide React** for modern icons
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15
+- **Library**: React 19
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **Email Service**: Nodemailer
+- **Linting**: ESLint
+- **Type Safety**: TypeScript
+- **Icon**: Lucide
+
+## 📦 Installation
+
+```sh
+# Clone the repository
+git clone https://github.com/edo6661/portfolio
+cd portfolio
+
+# Install dependencies
+yarn install
+
+# Run in development mode
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env` file and add the following environment variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+EMAIL_USER=YOUR_EMAIL
+EMAIL_PASSWORD=YOUR_PASSWORD
+```
 
-## Learn More
+## 🏗️ Build & Deployment
 
-To learn more about Next.js, take a look at the following resources:
+To build the project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+yarn build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To start the production server:
 
-## Deploy on Vercel
+```sh
+yarn start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `yarn dev` – Runs the development mode
+- `yarn build` – Builds the project for production
+- `yarn start` – Starts the production server
+- `yarn lint` – Checks code with ESLint
+
+## 📩 Contact
+
+If you have any questions or would like to collaborate, feel free to reach out via email or social media.
+
+## 🎨 Thanks To
+
+Special thanks to **Yanka Darelova** [@darelova](https://www.figma.com/@darelova) for the UI/UX design, which I have implemented through slicing.
