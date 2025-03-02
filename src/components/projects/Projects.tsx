@@ -235,7 +235,7 @@ const RightSection = (
   return (
     <div className='flex flex-col flex-1 min-h-full '>
       <div className='md:flex hidden gap-2 items-center border-b border-line'>
-        <span className='px-4 py-2'>
+        <span className='px-4 py-2 border-r border-line'>
           all;
         </span>
       </div>
@@ -248,9 +248,9 @@ const RightSection = (
               <GithubCorner
                 url={project.githubUrl}
               />
-              <div className='absolute top-0 left-0 text-secondary-white rounded-bl-md px-2 py-1 space-y-4 rounded-tl-md rounded-br-md '
+              <div className='absolute top-0 left-0 text-secondary-white px-2 py-1 space-y-4 rounded-tl-md rounded-br-md '
                 style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.1)"
+                  backgroundColor: "rgba(255, 255, 255, 0.3)"
                 }}
               >
                 {project.tech.map((tech, i) => (
@@ -280,7 +280,7 @@ const RightSection = (
                   </span>
                 </div>
                 <a target='_blank' href={project.url}
-                  className='bg-[#1C2B3A] block text-secondary-white rounded-sm text-center py-2 px-4 hover:bg-[#263B50] transition-colors duration-300 w-fit'
+                  className='button'
                 >
                   view-project
                 </a>

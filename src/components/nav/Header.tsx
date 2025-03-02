@@ -11,9 +11,9 @@ const Header = () => {
             Edawg
           </span>
           <div className="flex items-center ">
-            {navLinks.map((link) => {
-              return <NavLink key={link} name={link} />
-            })}
+            {navLinks.map((link) => link !== "_contact-me" && (
+              <NavLink key={link} name={link} />
+            ))}
           </div>
           <NavLink
             name="_contact-me"

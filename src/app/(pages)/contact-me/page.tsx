@@ -1,3 +1,4 @@
+import Contact from '@/components/contact/Contact'
 import { Metadata } from 'next'
 import React from 'react'
 export const metadata: Metadata = {
@@ -6,9 +7,8 @@ export const metadata: Metadata = {
 }
 
 const ContactPage = () => {
-  return (
-    <div className='flex-1'>ContactPage</div>
-  )
+  return <Contact />
 }
+
 
 export default ContactPage

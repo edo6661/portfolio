@@ -336,15 +336,7 @@ const getCodeLines = (activeItemValue: AllItems) => {
         { line: 3, prefix: '*', code: 'Software Engineering student with expertise in React, React Native, Next.js, Vue, Kotlin, Flutter, Jetpack Compose.' },
         { line: 4, prefix: '*', code: 'Strong in communication, teamwork, management, and problem-solving.' },
         { line: 5, prefix: '*', code: 'Committed to continuous learning and contributing to company growth.' },
-        { line: 6, prefix: '*', code: '-------------------' },
-        { line: 7, prefix: '*', code: 'Contact: +6289649762100' },
-        { line: 8, prefix: '*', code: 'Email: muhammadridho5654@gmail.com' },
-        { line: 9, prefix: '*', code: 'Social Media:' },
-        { line: 10, prefix: '*', code: 'Facebook: https://www.facebook.com/tembemzo' },
-        { line: 11, prefix: '*', code: 'LinkedIn: https://www.linkedin.com/in/muhammad-ridho-81890720a/' },
-        { line: 12, prefix: '*', code: 'Instagram: https://www.instagram.com/edawgz666/' },
-
-        { line: 12, prefix: '*/', code: '' },
+        { line: 6, prefix: '*/', code: '' },
       ];
     }
     case 'interests': {

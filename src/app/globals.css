@@ -20,6 +20,8 @@ body {
     --accent-green: #43d9ad;
     --accent-pink: #e99287;
     --accent-purple: #c98bdf;
+    --accent-secondary-purple: #5565e8;
+    --accent-code: rgb(233 146 135);
     --line: #1e2d3d;
     --gradient-blue: #4d5bce;
     --gradient-green: #43d9ad;
@@ -96,6 +98,9 @@ body {
     background-color: var(--secondary-default);
     border-radius: 10px;
     border: 2px solid var(--line);
+  }
+  .button {
+    @apply bg-[#1C2B3A] block text-secondary-white rounded-sm text-center py-2 px-4 hover:bg-[#263B50] transition-colors duration-300 w-fit;
   }
 
   body {

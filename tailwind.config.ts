@@ -35,6 +35,8 @@ export default {
           green: "var(--accent-green)",
           pink: "var(--accent-pink)",
           purple: "var(--accent-purple)",
+          secondaryPurple: "var(--accent-secondary-purple)",
+          code: "var(--accent-code)",
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
