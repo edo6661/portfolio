@@ -164,6 +164,7 @@ const InputRight = (
   return <div>
     <input
       {...props}
+      required
     />
   </div>
 }
@@ -173,6 +174,7 @@ const TextAreaRight = (
   return <div>
     <textarea
       {...props}
+      required
     />
   </div>
 }
