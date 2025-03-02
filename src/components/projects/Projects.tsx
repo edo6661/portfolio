@@ -56,36 +56,127 @@ export type Project = {
   tech: Tech[]
   description: string
   url?: string
-  githubUrl: string
+  githubUrl: string,
+  urlImagesDrive?: string
 }
 const initialProjects: Project[] = [
   {
-    image: "/images/projects/nike.png",
+    image: "/images/projects/edawg/nike-clone/1.jpg",
     title: "Nike Clone",
     tech: ["React", "CSS", "Typescript", "NextJS"],
-    description: "This is a project description",
+    description: "A static clone of the Nike website",
     url: "https://nike-clone-static.vercel.app/",
     githubUrl: "https://github.com/edo6661/nike-clone-static",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1NmTYghLkBuWG_exuR3lVoSBxj4cGTw0q",
   },
   {
-    image: "/images/projects/nike.png",
-    title: "Nike Clone",
-    tech: ["React", "Typescript", "NextJS"],
-    description: "This is a project description",
-    url: "https://nike-clone-static.vercel.app/",
-    githubUrl: "https://github.com/edo6661/nike-clone-static",
+    image: "/images/projects/edawg/film-kotlin/1.png",
+    title: "App TMDB Movies",
+    tech: ["Kotlin"],
+    description: "A movie app using the TMDB API",
+    url: "https://github.com/edo6661/Movies_Android",
+    githubUrl: "https://github.com/edo6661/Movies_Android",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1PdC3TsjJ9Nl_yGLbLAid5SZcCJNFW6Cn",
   },
   {
-    image: "/images/projects/nike.png",
-    title: "Nike Clone",
-    tech: ["React", "Typescript", "NextJS"],
-    description: "This is a project description",
-    url: "https://nike-clone-static.vercel.app/",
-    githubUrl: "https://github.com/edo6661/nike-clone-static",
+    image: "/images/projects/edawg/bcf/1.jpg",
+    title: "Lead Indonesia",
+    tech: ["Kotlin"],
+    description: "Bangkit Capstone Project, Bakrie Center Foundation",
+    url: "https://github.com/edo6661/bcf",
+    githubUrl: "https://github.com/edo6661/bcf",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1W-wPTX5ASvQ7yHk1EIgY7hrHuUlaJb_y",
   },
+  {
+    image: "/images/projects/edawg/anime/1.jpg",
+    title: "Anime",
+    tech: ["React", "CSS", "Typescript"],
+    description: "An anime app using the Jikan API",
+    url: "https://animebyaku-v1.vercel.app/",
+    githubUrl: "https://github.com/edo6661/animebyaku-v1-verceled",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1cMyA6MFTTHeZTaZ3yetVmvSFCZ7EAtpG",
+  },
+  {
+    image: "/images/projects/edawg/chat/1.jpg",
+    title: "Chat Landing Page",
+    tech: ["CSS"],
+    description: "A static landing page for a chat consultan",
+    url: "https://chat-app-vanilla.vercel.app/",
+    githubUrl: "https://github.com/edo6661/chat-app-vanilla1",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1jHC4WpqMK-uXcAdyEgAQ-haWY0V5olZ7",
+  },
+  {
+    image: "/images/projects/edawg/country/1.jpg",
+    title: "Find Country",
+    tech: ["CSS", "NextJS", "React", "Typescript"],
+    description: "A simple country app using the Rest Countries API",
+    url: "https://country-ruby.vercel.app/",
+    githubUrl: "https://github.com/edo6661/country",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1xnJ_KF3L3UHrbSerUptETO3dCcnC2qbh",
+  },
+
+  {
+    image: "/images/projects/edawg/film-web/1.jpg",
+    title: "Web TMDB Movies",
+    tech: ["CSS", "React", "Typescript"],
+    description: "A movie web using the TMDB API",
+    url: "https://moviebyaku-v1.vercel.app/",
+    githubUrl: "https://moviebyaku-v1.vercel.app/",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1hxEVQIm-0tIiJCKRyTsKEclBYC18W3oN",
+  },
+  {
+    image: "/images/projects/edawg/herbs/1.jpg",
+    title: "Herbs Landing Page",
+    tech: ["CSS"],
+    description: "A static landing page for a herbs",
+    url: "https://herbs-self.vercel.app/",
+    githubUrl: "https://github.com/edo6661/herbs",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1uiczCe9zc5hmeKNXUvJmAkfi3eVQNfWL",
+  },
+  {
+    image: "/images/projects/edawg/wma/1.jpg",
+    title: "Paint Car",
+    tech: ["Flutter"],
+    description: "Paint Car is a mobile application for painting cars",
+    url: "https://github.com/Rizz404/car_paint_client",
+    githubUrl: "https://github.com/Rizz404/car_paint_server",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1MhZjOzsiq0awdpb0zRQ2x6aw15qRHxvR",
+  },
+  {
+    image: "/images/projects/edawg/e-surat/1.jpg",
+    title: "E-Surat",
+    tech: ["CSS", "NextJS", "React", "Typescript"],
+    description: "E-Surat is a web application for managing incoming,outgoing mail and printing letters",
+    url: "https://surat-woad.vercel.app/",
+    githubUrl: "https://github.com/edo6661/surat",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1G1DdaOyQlnuF8xyzcG-p0dqeCEX6_9W-",
+  },
+
+  {
+    image: "/images/projects/edawg/alquran/1.jpg",
+    title: "Al-Quran",
+    tech: ["Vue", "CSS", "Typescript"],
+    description: "A simple Al-Quran app using the Al-Quran API",
+    url: "https://animebyaku-v1.vercel.app/",
+    githubUrl: "https://github.com/edo6661/alquran-vue-1",
+    urlImagesDrive: "https://drive.google.com/drive/folders/14xFlclXRQC2g8j4zJl4WK-EisOaAIa4-/",
+  },
+  {
+    image: "/images/projects/edawg/gql/1.jpg",
+    title: "Express KKN KKP",
+    tech: ["Typescript"],
+    description: "Registration of KKN KKP participants",
+    url: "https://animebyaku-v1.vercel.app/",
+    githubUrl: "https://main--pendaftaran-kkn-kkp.netlify.app/graphql",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1Pb2-xc8e_cUeaSurgVgWPth8cLYd0IES",
+  },
+
+
+
+
 ];
 
-const initialTechs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS"]
+const initialTechs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS", "CSS"]
 
 
 const Projects = () => {
@@ -246,10 +337,10 @@ const RightSection = (
       </div>
 
       {isNotEmpty && (
-        <div className={`flex flex-wrap px-6 py-4 gap-8 ${!isNotEmpty ? 'flex-1 justify-center items-center' : 'justify-around'}`}
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6`}
         >
           {filteredProjects.map((project, i) =>
-            <div key={i} className='border-line bg-primary-light border rounded-md relative'>
+            <div key={i} className='border-line bg-primary-light border rounded-md relative flex flex-col'>
               <GithubCorner
                 url={project.githubUrl}
               />
@@ -265,30 +356,36 @@ const RightSection = (
                     width={24}
                     height={24}
                     alt={projectTech[tech].title}
+                    priority={i < 3}
                   />
                 ))}
               </div>
-              <Image
-                src={project.image}
-                width={200}
-                height={200}
-                className='w-full object-cover rounded-md'
-                alt={project.title}
-              />
-              <div className='flex flex-col gap-4 py-6 px-4'>
-                <div className="flex flex-col gap-2">
+              <a target='_blank' href={project.urlImagesDrive}>
+                <Image
+                  src={project.image}
+                  width={200}
+                  height={200}
+                  className='object-cover w-full max-h-[200px] min-h-[200px]'
+                  alt={project.title}
+                  priority={i < 3}
+                />
+              </a>
+              <div className='flex flex-col gap-4 py-6 px-4 flex-1'>
+                <div className="flex flex-col gap-2 font-medium text-lg">
                   <span>
                     {project.title}
                   </span>
-                  <span className='text-xs font-thin'>
+                  <span className='font-thin'>
                     {project.description}
                   </span>
                 </div>
-                <a target='_blank' href={project.url}
-                  className='button'
-                >
-                  view-project
-                </a>
+                <div className="flex-1 flex items-end justify-end">
+                  <a target='_blank' href={project.url}
+                    className='button block'
+                  >
+                    view-project
+                  </a>
+                </div>
 
               </div>
 
@@ -312,5 +409,7 @@ const RightSection = (
 
   )
 }
+
+
 
 export default Projects
