@@ -3,8 +3,8 @@ import Image from 'next/image'
 import React, { useMemo, useState } from 'react'
 import GithubCorner from './GithubCorner'
 
-export type Tech = "React" | "Vue" | "Flutter" | "Kotlin" | "Typescript" | "NextJS"
-const techs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS"]
+export type Tech = "React" | "Vue" | "Flutter" | "Kotlin" | "Typescript" | "NextJS" | "CSS"
+const techs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS", "CSS"]
 export type ProjectTech = {
   image: string
   title: string
@@ -42,6 +42,11 @@ const projectTech: Record<Tech, ProjectTech> = {
     image: "icons/techs/nextjs.svg",
     imageFilled: "icons/techs/filled/nextjs.svg",
     title: "NextJS"
+  },
+  CSS: {
+    image: "icons/techs/css.svg",
+    imageFilled: "icons/techs/filled/css.svg",
+    title: "CSS"
   }
 }
 
@@ -57,7 +62,7 @@ const initialProjects: Project[] = [
   {
     image: "/images/projects/nike.png",
     title: "Nike Clone",
-    tech: ["React", "Typescript", "NextJS"],
+    tech: ["React", "CSS", "Typescript", "NextJS"],
     description: "This is a project description",
     url: "https://nike-clone-static.vercel.app/",
     githubUrl: "https://github.com/edo6661/nike-clone-static",

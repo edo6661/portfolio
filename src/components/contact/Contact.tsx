@@ -1,8 +1,9 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useActionState } from 'react'
 import { DynamicIcon, IconName } from 'lucide-react/dynamic';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ContactState, sendMail } from '@/lib/node-mailer';
 
 type LeftSectionKey = 'contacts' | 'socials'
 const initialIsOpens: Record<LeftSectionKey, boolean> = {
@@ -11,6 +12,8 @@ const initialIsOpens: Record<LeftSectionKey, boolean> = {
 }
 
 const Contact = () => {
+  const [state, send, isPending] = useActionState(sendMail, {})
+
   const [isOpens, setIsOpens] = React.useState<Record<LeftSectionKey, boolean>>(initialIsOpens)
 
   const onChangeIsOpen = (key: LeftSectionKey) => {
@@ -25,19 +28,31 @@ const Contact = () => {
         isOpens={isOpens}
         onChangeIsOpen={onChangeIsOpen}
       />
-      <RightSection />
+      <RightSection
+        send={send}
+        isPending={isPending}
+        state={state}
+      />
     </div>
   )
 }
 
-const RightSection = () => {
+const RightSection = (
+  { send, isPending, state }: {
+    send: (formData: FormData) => void,
+    isPending: boolean,
+    state: ContactState
+  }
+) => {
   return (
     <div className='flex flex-col flex-1'>
       <span className='py-2 px-4 border-r border-line w-fit'>
         contacts
       </span>
       <div className='border-t border-line p-4 w-full grid sm:grid-cols-2 items-center justify-center gap-8  '>
-        <FormRight>
+        <FormRight
+          send={send}
+        >
           <FieldRight
             label='_name'
             htmlFor='name'
@@ -45,7 +60,7 @@ const RightSection = () => {
           />
           <FieldRight
             label='_email'
-            htmlFor='name'
+            htmlFor='email'
             type='text'
           />
           <FieldRight
@@ -59,9 +74,20 @@ const RightSection = () => {
             type='text'
             isTextArea
           />
-          <button className='button w-full'>
-            submit-message
+          <button className='button w-full disabled:opacity-50 disabled:cursor-not-allowed transition-opacity duration-150' disabled={isPending}>
+            {isPending ? 'Sending...' : 'Send'}
           </button>
+          {state?.message && (
+            <div
+              className={`p-3 rounded-md ${state.success
+                ? 'bg-green-500/20 text-green-500'
+                : 'bg-red-500/20 text-red-500'
+                }`}
+            >
+              {state.message}
+            </div>
+          )}
+
 
 
         </FormRight>
@@ -79,7 +105,6 @@ const RightSection = () => {
     </div>
   )
 }
-
 const FieldRight = (
   { label, htmlFor, type, isTextArea = false }: {
     label: string,
@@ -96,22 +121,30 @@ const FieldRight = (
           id={htmlFor}
           name={htmlFor}
           rows={4}
-          className='border border-line placeholder-slate-500 bg-[#011221] px-4 py-2 rounded-md'
+          className='border border-line placeholder-slate-500 bg-[#011221] px-4 py-2 rounded-md
+            focus:ring-2 focus:ring-secondary-white focus:ring-opacity-50 focus:outline-none transition-colors duration-150'
         />
       ) : (
         <InputRight
           id={htmlFor}
           name={htmlFor}
           type={type}
-          className='border border-line placeholder-slate-500 bg-[#011221] px-4 py-2 rounded-md'
+          className='border border-line placeholder-slate-500 bg-[#011221] px-4 py-2 rounded-md
+            focus:ring-2 focus:ring-secondary-white focus:ring-opacity-50 focus:outline-none transition-colors duration-150
+          '
         />
       )}
     </div>
   )
 }
-const FormRight = ({ children }: { children: React.ReactNode, }) => {
+
+const FormRight = ({ children, send }: {
+  children: React.ReactNode,
+  send: (formData: FormData) => void
+
+}) => {
   return (
-    <form className='flex flex-col gap-4 mx-auto'>
+    <form className='flex flex-col gap-4 mx-auto' action={send}>
       {children}
     </form>
   )
