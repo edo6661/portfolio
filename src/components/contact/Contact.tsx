@@ -61,7 +61,7 @@ const RightSection = (
           <FieldRight
             label='_email'
             htmlFor='email'
-            type='text'
+            type='email'
           />
           <FieldRight
             label='_subject'
@@ -234,8 +234,8 @@ const LeftSection = (
           >
             <LinkLeft text='LinkedIn' href='https://www.linkedin.com/in/muhammad-ridho-81890720a/' icon='linkedin' />
             <LinkLeft text='Github' href='https://www.github.com/edo6661' icon='github' />
-            <LinkLeft text='Instagram' href='https://www.github.com/edo6661' icon='instagram' />
-            <LinkLeft text='Facebook' href='https://www.github.com/edo6661' icon='facebook' />
+            <LinkLeft text='Instagram' href='https://www.instagram.com/edawgz666/' icon='instagram' />
+            <LinkLeft text='Facebook' href='https://www.facebook.com/tembemzo' icon='facebook' />
           </motion.div>
 
         )}

@@ -121,7 +121,7 @@ const initialProjects: Project[] = [
     tech: ["CSS", "React", "Typescript"],
     description: "A movie web using the TMDB API",
     url: "https://moviebyaku-v1.vercel.app/",
-    githubUrl: "https://moviebyaku-v1.vercel.app/",
+    githubUrl: "https://github.com/edo6661/animebyaku-v1-verceled",
     urlImagesDrive: "https://drive.google.com/drive/folders/1hxEVQIm-0tIiJCKRyTsKEclBYC18W3oN",
   },
   {
@@ -157,7 +157,7 @@ const initialProjects: Project[] = [
     title: "Al-Quran",
     tech: ["Vue", "CSS", "Typescript"],
     description: "A simple Al-Quran app using the Al-Quran API",
-    url: "https://animebyaku-v1.vercel.app/",
+    url: "https://alquran-vue-1.vercel.app/",
     githubUrl: "https://github.com/edo6661/alquran-vue-1",
     urlImagesDrive: "https://drive.google.com/drive/folders/14xFlclXRQC2g8j4zJl4WK-EisOaAIa4-/",
   },
@@ -166,8 +166,8 @@ const initialProjects: Project[] = [
     title: "Express KKN KKP",
     tech: ["Typescript"],
     description: "Registration of KKN KKP participants",
-    url: "https://animebyaku-v1.vercel.app/",
-    githubUrl: "https://main--pendaftaran-kkn-kkp.netlify.app/graphql",
+    url: "https://main--pendaftaran-kkn-kkp.netlify.app/graphql",
+    githubUrl: "https://github.com/edo6661/pendaftaran-kkn-kkp-gql-01",
     urlImagesDrive: "https://drive.google.com/drive/folders/1Pb2-xc8e_cUeaSurgVgWPth8cLYd0IES",
   },
 

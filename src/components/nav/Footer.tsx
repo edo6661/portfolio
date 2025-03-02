@@ -26,7 +26,7 @@ const Footer = () => {
 
         </div>
         <div>
-          <a href="https://facebook.com/tembemzo" target="_blank" rel="noreferrer"
+          <a href="https://github.com/edo6661" target="_blank" rel="noreferrer"
             className='border-l border-line py-4 px-4 hover:bg-[#1e2d3d74] hover:text-secondary-white transition-colors duration-200 flex items-center gap-4'
           >
             <span>

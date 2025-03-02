@@ -30,7 +30,7 @@ const MainSection = () => {
       </div>
       <div className={`flex items-center gap-2 text-gradient-blue sm:text-2xl md:text-3xl lg:text-4xl`}>
         <span> {">"} </span>
-        <LoopText text="Frontend Engineer" />
+        <LoopText text="Software Engineer" />
       </div>
       <div className="gap-4 flex flex-col max-w-[200px] md:max-w-full">
         <span className="text-secondary">

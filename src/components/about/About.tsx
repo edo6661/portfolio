@@ -134,7 +134,9 @@ export const LineOfCode = ({
     <div className='flex gap-4'>
       <span>{line}</span>
       <span>{prefix}</span>
-      {code && <span className='break-all'>{code}</span>}
+      {code && code.startsWith("https") ? <a href={code} target='_blank' className='border-b border-secondary-white hover:text-secondary-white transition-colors duration-150'>
+        {code}
+      </a> : <span>{code}</span>}
     </div>
   )
 }
