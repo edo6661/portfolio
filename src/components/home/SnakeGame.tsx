@@ -210,7 +210,7 @@ const SnakeGame = () => {
 
       <button
         id="start-button"
-
+        className='pointer-events-none'
         onClick={startGame}
         style={{ display: gameStarted || gameOver ? 'none' : 'block' }}
       >
@@ -218,7 +218,9 @@ const SnakeGame = () => {
       </button>
 
       <div id="game-over" style={{ display: gameOver ? 'block' : 'none' }} className='py-2'>
-        <button onClick={startAgain} className='text-secondary'>Start Again</button>
+        <button onClick={startAgain} className='text-secondary'>
+          Space to start again
+        </button>
       </div>
 
       <div id="congrats" style={{ display: congratsVisible ? 'block' : 'none' }}>
@@ -227,7 +229,9 @@ const SnakeGame = () => {
       </div>
       <div className=' md:flex flex-col gap-2 items-center justify-center hidden '>
         <div className='bg-[#01142319] text-white py-1 px-2 rounded-md  text-xs'>
-          <p>Use keyboard</p>
+          <p>
+            Space to start
+          </p>
           <p>Arrows to play</p>
         </div>
         <div className='lg:flex hidden flex-col items-center justify-center'>

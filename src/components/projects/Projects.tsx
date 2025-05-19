@@ -3,8 +3,8 @@ import Image from 'next/image'
 import React, { useMemo, useState } from 'react'
 import GithubCorner from './GithubCorner'
 
-export type Tech = "React" | "Vue" | "Flutter" | "Kotlin" | "Typescript" | "NextJS" | "CSS"
-const techs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS", "CSS"]
+export type Tech = "React" | "Vue" | "Flutter" | "Kotlin" | "Typescript" | "NextJS" | "CSS" | "Laravel"
+const techs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS", "CSS", "Laravel"]
 export type ProjectTech = {
   image: string
   title: string
@@ -47,6 +47,11 @@ const projectTech: Record<Tech, ProjectTech> = {
     image: "icons/techs/css.svg",
     imageFilled: "icons/techs/filled/css.svg",
     title: "CSS"
+  },
+  Laravel: {
+    image: "icons/techs/laravel.svg",
+    imageFilled: "icons/techs/filled/laravel.svg",
+    title: "Laravel"
   }
 }
 
@@ -102,8 +107,26 @@ const initialProjects: Project[] = [
     tech: ["CSS"],
     description: "A static landing page for a chat consultan",
     url: "https://chat-app-vanilla.vercel.app/",
-    githubUrl: "https://github.com/edo6661/chat-app-vanilla1",
+    githubUrl: "https://github.com/edo6661/chat-app-vanilla",
     urlImagesDrive: "https://drive.google.com/drive/folders/1jHC4WpqMK-uXcAdyEgAQ-haWY0V5olZ7",
+  },
+  {
+    image: "/images/projects/kawan-gym.png",
+    title: "Gym Landing Page",
+    tech: ["CSS"],
+    description: "A static landing page for a gym",
+    url: "https://kawan-gym.vercel.app/",
+    githubUrl: "https://github.com/edo6661/kawangym",
+    urlImagesDrive: "https://drive.google.com/drive/u/1/folders/1qQVN83ev2joGszYL2CC6jhcvcrom5RY3",
+  },
+  {
+    image: "/images/projects/elemes.png",
+    title: "Cookie Page",
+    tech: ["CSS"],
+    description: "A static landing page for a cookie",
+    url: "https://elemes-assesment.vercel.app/",
+    githubUrl: "https://github.com/edo6661/elemes-assesment",
+    urlImagesDrive: "https://drive.google.com/drive/u/1/folders/1tloVdE69egRrhs8uAw_9m2EkBFYTK8fR",
   },
   {
     image: "/images/projects/edawg/country/1.jpg",
@@ -126,10 +149,10 @@ const initialProjects: Project[] = [
   },
   {
     image: "/images/projects/edawg/herbs/1.jpg",
-    title: "Herbs Landing Page",
+    title: "Palm Sugar Landing Page",
     tech: ["CSS"],
-    description: "A static landing page for a herbs",
-    url: "https://herbs-self.vercel.app/",
+    description: "A static landing page for a palm Sugar",
+    url: "https://reoncy.com",
     githubUrl: "https://github.com/edo6661/herbs",
     urlImagesDrive: "https://drive.google.com/drive/folders/1uiczCe9zc5hmeKNXUvJmAkfi3eVQNfWL",
   },
@@ -162,13 +185,13 @@ const initialProjects: Project[] = [
     urlImagesDrive: "https://drive.google.com/drive/folders/14xFlclXRQC2g8j4zJl4WK-EisOaAIa4-/",
   },
   {
-    image: "/images/projects/edawg/gql/1.jpg",
-    title: "Express KKN KKP",
-    tech: ["Typescript"],
-    description: "Registration of KKN KKP participants",
-    url: "https://main--pendaftaran-kkn-kkp.netlify.app/graphql",
-    githubUrl: "https://github.com/edo6661/pendaftaran-kkn-kkp-gql-01",
-    urlImagesDrive: "https://drive.google.com/drive/folders/1Pb2-xc8e_cUeaSurgVgWPth8cLYd0IES",
+    image: "/images/projects/fts.png",
+    title: "Fujiyama",
+    tech: ["Laravel", "CSS"],
+    description: "Server Service",
+    url: "https://fujiyama-technology-solution-main-ysxv1w.laravel.cloud/",
+    githubUrl: "https://github.com/edo6661/Fujiyama_Technology_Solution",
+    urlImagesDrive: "https://drive.google.com/drive/u/1/folders/1jbBeq_kwEqzWPmnev2nwB5YkRHeCI1dj",
   },
 
 
@@ -176,7 +199,7 @@ const initialProjects: Project[] = [
 
 ];
 
-const initialTechs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS", "CSS"]
+const initialTechs: Tech[] = ["React", "Vue", "Flutter", "Kotlin", "Typescript", "NextJS", "CSS", "Laravel"]
 
 
 const Projects = () => {
@@ -330,11 +353,11 @@ const RightSection = (
   const isNotEmpty = filteredProjects.length > 0;
   return (
     <div className='flex flex-col flex-1 min-h-full '>
-      <div className='md:flex hidden gap-2 items-center border-b border-line'>
+      {/* <div className='md:flex hidden gap-2 items-center border-b border-line'>
         <span className='px-4 py-2 border-r border-line'>
           all;
         </span>
-      </div>
+      </div> */}
 
       {isNotEmpty && (
         <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6`}
