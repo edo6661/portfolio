@@ -66,14 +66,24 @@ export type Project = {
 }
 const initialProjects: Project[] = [
   {
-    image: "/images/projects/edawg/nike-clone/1.jpg",
-    title: "Nike Clone",
-    tech: ["React", "CSS", "Typescript", "NextJS"],
-    description: "A static clone of the Nike website",
-    url: "https://nike-clone-static.vercel.app/",
-    githubUrl: "https://github.com/edo6661/nike-clone-static",
-    urlImagesDrive: "https://drive.google.com/drive/folders/1NmTYghLkBuWG_exuR3lVoSBxj4cGTw0q",
+    image: "/images/projects/edawg/chat/1.jpg",
+    title: "Consultant Landing Page",
+    tech: ["CSS"],
+    description: "A static landing page for a chat consultant",
+    url: "https://chat-app-vanilla.vercel.app/",
+    githubUrl: "https://github.com/edo6661/chat-app-vanilla",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1jHC4WpqMK-uXcAdyEgAQ-haWY0V5olZ7",
   },
+  {
+    image: "/images/projects/tasks.png",
+    title: "Tasks",
+    tech: ["React", "CSS", "Typescript", "NextJS"],
+    description: "A task management app",
+    url: "https://task-assesment.vercel.app/",
+    githubUrl: "https://github.com/edo6661/task-assesment",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1-Hd2hA9yXyP1l7Mi544FUSrWCPkaUks0",
+  },
+
   {
     image: "/images/projects/edawg/film-kotlin/1.png",
     title: "App TMDB Movies",
@@ -82,6 +92,15 @@ const initialProjects: Project[] = [
     url: "https://github.com/edo6661/Movies_Android",
     githubUrl: "https://github.com/edo6661/Movies_Android",
     urlImagesDrive: "https://drive.google.com/drive/folders/1PdC3TsjJ9Nl_yGLbLAid5SZcCJNFW6Cn",
+  },
+  {
+    image: "/images/projects/drawing.png",
+    title: "Drawing",
+    tech: ["React", "CSS", "Typescript", "NextJS"],
+    description: "A drawing app",
+    url: "https://mugi-canva.vercel.app/",
+    githubUrl: "https://github.com/edo6661/MugiCanva",
+    urlImagesDrive: "https://drive.google.com/drive/u/1/folders/1Q8wEHI_5xImu-s670pS_XgBjEwy6LsUK",
   },
   {
     image: "/images/projects/edawg/bcf/1.jpg",
@@ -93,6 +112,15 @@ const initialProjects: Project[] = [
     urlImagesDrive: "https://drive.google.com/drive/folders/1W-wPTX5ASvQ7yHk1EIgY7hrHuUlaJb_y",
   },
   {
+    image: "/images/projects/edawg/nike-clone/1.jpg",
+    title: "Nike Clone",
+    tech: ["React", "CSS", "Typescript", "NextJS"],
+    description: "A static clone of the Nike website",
+    url: "https://nike-clone-static.vercel.app/",
+    githubUrl: "https://github.com/edo6661/nike-clone-static",
+    urlImagesDrive: "https://drive.google.com/drive/folders/1NmTYghLkBuWG_exuR3lVoSBxj4cGTw0q",
+  },
+  {
     image: "/images/projects/edawg/anime/1.jpg",
     title: "Anime",
     tech: ["React", "CSS", "Typescript"],
@@ -101,15 +129,7 @@ const initialProjects: Project[] = [
     githubUrl: "https://github.com/edo6661/animebyaku-v1-verceled",
     urlImagesDrive: "https://drive.google.com/drive/folders/1cMyA6MFTTHeZTaZ3yetVmvSFCZ7EAtpG",
   },
-  {
-    image: "/images/projects/edawg/chat/1.jpg",
-    title: "Chat Landing Page",
-    tech: ["CSS"],
-    description: "A static landing page for a chat consultan",
-    url: "https://chat-app-vanilla.vercel.app/",
-    githubUrl: "https://github.com/edo6661/chat-app-vanilla",
-    urlImagesDrive: "https://drive.google.com/drive/folders/1jHC4WpqMK-uXcAdyEgAQ-haWY0V5olZ7",
-  },
+
   {
     image: "/images/projects/kawan-gym.png",
     title: "Gym Landing Page",
@@ -188,8 +208,8 @@ const initialProjects: Project[] = [
     image: "/images/projects/fts.png",
     title: "Fujiyama",
     tech: ["Laravel", "CSS"],
-    description: "Server Service",
-    url: "https://fujiyama-technology-solution-main-ysxv1w.laravel.cloud/",
+    description: "Server and client for a technology solution company",
+    url: "https://fts.biz.id/",
     githubUrl: "https://github.com/edo6661/Fujiyama_Technology_Solution",
     urlImagesDrive: "https://drive.google.com/drive/u/1/folders/1jbBeq_kwEqzWPmnev2nwB5YkRHeCI1dj",
   },
