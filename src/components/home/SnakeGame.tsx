@@ -210,7 +210,6 @@ const SnakeGame = () => {
 
       <button
         id="start-button"
-        className='pointer-events-none'
         onClick={startGame}
         style={{ display: gameStarted || gameOver ? 'none' : 'block' }}
       >

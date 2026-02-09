@@ -94,6 +94,15 @@ const initialProjects: Project[] = [
     urlImagesDrive: "https://drive.google.com/drive/folders/1PdC3TsjJ9Nl_yGLbLAid5SZcCJNFW6Cn",
   },
   {
+    image: "/images/projects/edawg/reoncy/1.png",
+    title: "E-Commerce Palm Sugar",
+    tech: ["Flutter"],
+    description: "Palm Sugar E-commerce",
+    url: "https://github.com/edo6661/Palmers",
+    githubUrl: "https://github.com/edo6661/Palmers",
+    urlImagesDrive: "https://drive.google.com/drive/u/1/folders/193SO99v8lhy2pLI8CIAL-eEgIv2MRJWd",
+  },
+  {
     image: "/images/projects/drawing.png",
     title: "Drawing",
     tech: ["React", "CSS", "Typescript", "NextJS"],

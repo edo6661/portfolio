@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className="css-blurry-gradient-green sm:block hidden" />
       <MainSection />
 
-      <div className="sm:flex hidden justify-center z-20 ">
+      <div className="sm:flex hidden justify-center z-40">
         <SnakeGame />
       </div>
 
