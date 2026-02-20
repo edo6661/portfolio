@@ -66,6 +66,15 @@ export type Project = {
 }
 const initialProjects: Project[] = [
   {
+    image: "/images/projects/edawg/twinly/1.jpeg",
+    title: "Twinly",
+    tech: ["React", "CSS", "Typescript"],
+    description: "",
+    url: "https://twinly-tech-lp.vercel.app/",
+    githubUrl: "https://github.com/edo6661/Twinly-Tech-LP",
+    urlImagesDrive: "https://twinly-tech-lp.vercel.app/",
+  },
+  {
     image: "/images/projects/edawg/chat/1.jpg",
     title: "Consultant Landing Page",
     tech: ["CSS"],
